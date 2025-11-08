@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MR RANJI BHAI - Colorful 3D Download Center</title>
+  <meta name="description" content="MR RANJI BHAI - 3D Colorful Download Center (1080p, 10 Boxes)">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: linear-gradient(135deg,#ffecd2 0%,#fcb69f 100%);
+      --card: rgba(255,255,255,0.96);
+      --muted: #444;
+    }
+    html,body{
+      height:100%;
+      margin:0;
+      font-family:'Poppins',sans-serif;
+      background:var(--bg);
+      color:#111;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    /* Centered full-HD container */
+    .stage{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:36px 24px;
+      box-sizing:border-box;
+    }
+    .wrap{
+      width:100%;
+      max-width:1980px; /* full-HD friendly */
+      background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+      border-radius:20px;
+      padding:30px;
+      box-shadow:0 30px 80px rgba(10,10,20,0.25);
+      backdrop-filter: blur(6px);
+      transform-style:preserve-3d;
+    }
+    header{text-align:center;margin-bottom:18px}
+    .logo{
+      width:160px;height:160px;margin:0 auto 12px;
+      background:conic-gradient(from 90deg,#ff416c,#ff4b2b,#1d976c,#2af598,#8e2de2);
+      border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:26px;box-shadow:0 20px 40px rgba(0,0,0,0.25);animation:spinLogo 8s linear infinite;
+    }
+    @keyframes spinLogo{from{transform:rotateY(0)}to{transform:rotateY(360deg)}}
+    h1{font-size:34px;margin:6px 0;background:linear-gradient(90deg,#ff416c,#ff4b2b,#1d976c,#2af598);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    p.lead{margin:8px 0 20px;color:var(--muted);font-size:16px}
+
+    /* Grid for 10 boxes */
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap:20px;
+    }
+
+    /* Card styles */
+    .card{
+      background:var(--card);
+      border-radius:18px;
+      padding:18px;
+      display:flex;
+      gap:14px;
+      align-items:center;
+      box-shadow:0 10px 30px rgba(0,0,0,0.12);
+      transition:transform .28s cubic-bezier(.2,.8,.2,1), box-shadow .28s ease;
+    }
+    .card:hover{transform:translateY(-10px) scale(1.03) rotateX(4deg);box-shadow:0 22px 60px rgba(0,0,0,0.2)}
+    .thumb{width:78px;height:78px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:28px;box-shadow:0 8px 18px rgba(0,0,0,0.12)}
+    .meta h3{margin:0;font-size:18px;background:linear-gradient(90deg,#ff416c,#ff4b2b,#1d976c,#2af598);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    .meta p{margin:6px 0 8px;color:var(--muted);font-size:13px}
+    .meta .actions{display:flex;gap:8px;align-items:center}
+    a.btn{padding:8px 14px;border-radius:10px;text-decoration:none;font-weight:700;color:#fff;box-shadow:0 6px 18px rgba(0,0,0,0.12)}
+    a.primary{background:linear-gradient(135deg,#ff416c,#ff4b2b)}
+    a.ghost{background:transparent;color:var(--muted);border:1px solid rgba(0,0,0,0.06);box-shadow:none}
+    a.primary:hover{transform:scale(1.03)}
+
+    /* individual thumb gradients */
+    .g1{background:linear-gradient(135deg,#ff416c,#ff4b2b)}
+    .g2{background:linear-gradient(135deg,#1d976c,#2af598)}
+    .g3{background:linear-gradient(135deg,#36d1dc,#5b86e5)}
+    .g4{background:linear-gradient(135deg,#8e2de2,#4a00e0)}
+    .g5{background:linear-gradient(135deg,#f7971e,#ffd200)}
+    .g6{background:linear-gradient(135deg,#ff7e5f,#feb47b)}
+    .g7{background:linear-gradient(135deg,#00c6ff,#0072ff)}
+    .g8{background:linear-gradient(135deg,#00b09b,#96c93d)}
+    .g9{background:linear-gradient(135deg,#f953c6,#b91d73)}
+    .g10{background:linear-gradient(135deg,#7f00ff,#e100ff)}
+
+    footer{margin-top:26px;text-align:center;color:var(--muted);font-size:13px}
+
+    /* Responsive */
+    @media (max-width:1200px){.grid{grid-template-columns:repeat(3,1fr)}}
+    @media (max-width:800px){.grid{grid-template-columns:repeat(2,1fr)}.logo{width:120px;height:120px}.thumb{width:64px;height:64px;font-size:22px}}
+    @media (max-width:420px){.grid{grid-template-columns:1fr}.wrap{padding:18px}.h1{font-size:22px}}
+  </style>
+</head>
+<body>
+  <div class="stage">
+    <div class="wrap" role="main">
+      <header>
+        <div class="logo">MR<br>RANJI<br>BHAI</div>
+        <h1>Colorful 3D Download Center (1080p)</h1>
+        <p class="lead">10 जल्दी डाउनलोड बॉक्स — Click करके डाउनलोड करें। (Links placeholder — अपने .exe/.zip से बदलें)</p>
+      </header>
+
+      <section class="grid" aria-label="Download list">
+
+        <article class="card">
+          <div class="thumb g1">C</div>
+          <div class="meta">
+            <h3>Google Chrome</h3>
+            <p>Latest official Chrome installer.</p>
+            <div class="actions">
+              <a class="btn primary" href="https://www.google.com/chrome/" target="_blank" rel="noopener">Download</a>
+              <a class="btn ghost" href="#">Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb g2">G</div>
+          <div class="meta">
+            <h3>GoLogin</h3>
+            <p>GoLogin installer for Windows.</p>
+            <div class="actions">
+              <a class="btn primary" href="https://dl.gologin.com/gologin.exe" target="_blank" rel="noopener">Download</a>
+              <a class="btn ghost" href="#">Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb g3">B</div>
+          <div class="meta">
+            <h3>Brahmos</h3>
+            <p>Secure Brahmos tool (placeholder).</p>
+            <div class="actions">
+              <a class="btn primary" href="brahmos.exe" download>Download</a>
+              <a class="btn ghost" href="#">Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb g4">E</div>
+          <div class="meta">
+            <h3>Edge Auto Installer</h3>
+            <p>Auto-run Edge installer (batch).</p>
+            <div class="actions">
+              <a class="btn primary" href="edge_installer.bat" download>Download</a>
+              <a class="btn ghost" href="#">Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb g5">O</div>
+          <div class="meta">
+            <h3>Offline Billing</h3>
+            <p>Billing app (no-GST) — ready zip.</p>
+            <div class="actions">
+              <a class="btn primary" href="billing.zip" download>Download</a>
+              <a class="btn ghost" href="#">Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb g6">N</div>
+          <div class="meta">
+            <h3>Net Disabler</h3>
+            <p>Toggle internet with password (exe).</p>
+            <div class="actions">
+              <a class="btn primary" href="netdisabler.exe" download>Download</a>
+              <a class="btn ghost" href="#">Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb g7">T</div>
+          <div class="meta">
+            <h3>Train Checker</h3>
+            <p>Train availability HTML (live).</p>
+            <div class="actions">
+              <a class="btn primary" href="train.html" download>Download</a>
+              <a class="btn ghost" href="#">Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb g8">A</div>
+          <div class="meta">
+            <h3>Auto Chrome Install</h3>
+            <p>Auto Chrome batch installer (.bat).</p>
+            <div class="actions">
+              <a class="btn primary" href="chrome_auto.bat" download>Download</a>
+              <a class="btn ghost" href="#">Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb g9">S</div>
+          <div class="meta">
+            <h3>System Cleaner</h3>
+            <p>PC speed & cleanup utility.</p>
+            <div class="actions">
+              <a class="btn primary" href="cleaner.exe" download>Download</a>
+              <a class="btn ghost" href="#">Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb g10">U</div>
+          <div class="meta">
+            <h3>Universal Tools</h3>
+            <p>All-in-one utilities pack (zip).</p>
+            <div class="actions">
+              <a class="btn primary" href="tools.zip" download>Download</a>
+              <a class="btn ghost" href="#">Details</a>
+            </div>
+          </div>
+        </article>
+
+      </section>
+
+      <footer>
+        <p>© 2025 MR RANJI BHAI — Upload these files to <code>mr-ranji-bhai-download</code> GitHub repo and enable Pages to host online.</p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
